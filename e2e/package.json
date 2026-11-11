@@ -1,0 +1,15 @@
+{
+  "name": "campusbridge-e2e",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Optional real-browser end-to-end test for CampusBridge (kept separate so the main app stays small).",
+  "scripts": {
+    "test": "node workflow.test.mjs && node roles.test.mjs",
+    "test:workflow": "node workflow.test.mjs",
+    "test:roles": "node roles.test.mjs"
+  },
+  "devDependencies": {
+    "puppeteer": "^23.11.1"
+  }
+}
